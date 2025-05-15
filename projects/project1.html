@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis de empresa de venta de articulos electronicos (ElectroMas) | BI Dario</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Nota la ruta relativa a style.css -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Dario Nievas</span> Portafolio</h1>
+            </div>
+            <nav>
+                 <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../about.html">Acerca de</a></li>
+                    <li class="current"><a href="../projects.html">Proyectos</a></li>
+                    <li><a href="../contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="content-section">
+        <div class="container">
+            <h1>Analisis de empresa ficticia de venta de articulos electronicos (Pamasonic)</h1>
+            <p><strong>Tecnologías Utilizadas:</strong> Power Bi (Power Query), Excel.</p>
+
+            <h3>Pamasonic, una empresa dedicada a la comercialización minorista de artículos electrónicos y electrodomésticos.</h3>
+            <p>El gerente general de la empresa,solicita un análisis de las ventas de los últimos 3 años. El objetivo es entender cómo han evolucionado las ventas y qué factores pueden estar influyendo en su comportamiento.</p>
+            <p>1. Por un lado al gerente le interesa ver las ventas totales, y su tendencia a lo largo del tiempo, así como su distribución en los canales de venta (tiendas físicas u online), y conocer geográficamente, dónde se concentran sus clientes.</p>
+            <p>2. Por otro lado, le interesa ver cómo se comparan las diferentes categorías de productos entre sí, respecto a la cantidad de unidades vendidas. </p>
+            <h3>Fuente de Datos: Archivo CSV obtenido de Kaggle</h3>
+            
+
+            <h2>Metodología y Proceso</h2>
+            <ul>
+                <li>Limpieza y Transformación de Datos: Manejé valores faltantes, corregí formatos y uní tablas, con la ayuda de power query y excel.</li>
+                <li>Análisis Exploratorio de Datos (EDA):Explore la evolucion de las ventas en el tiempo para observar tendencias o estacionalidad y distribucion de las ventas usando las visualizaciones mas adecuadas.</li>
+                <li>Visualización de Datos:Primero cree un dashboard para las visualizaciones enfocadas en los canales de ventas, como graficos de anillos, lineas y mapa, agregando un segmentador para su control y una tarjeta informativa. En el segundo dashboard me enfoque en los productos, creando visualizaciones adecuadas para los mismos como grafico de barras agrupadas, con segmentador de categoria y ciudad.</li>
+            </ul>
+
+             <h2>Visualizaciones / Dashboard</h2>
+             <h3>Vista principal</h3>
+             <!-- Si es un dashboard de Power BI o Tableau Public, puedes incrustarlo con un iframe -->
+             <!-- Ejemplo de incrustar Power BI (Obtén el código de inserción desde Power BI Service) -->
+             <!--
+             <iframe title="[Título de tu Dashboard]" width="100%" height="600" src="[URL de inserción de Power BI]" frameborder="0" allowFullScreen="true"></iframe>
+             -->
+             <!-- Ejemplo de incrustar Tableau Public (Obtén el código de inserción desde Tableau Public) -->
+             <!--
+             <div class='tableauPlaceholder' id='viz1678901234567' style='position: relative'><noscript><a href='#'><img alt='[Título de tu Dashboard] ' src='[URL de imagen de tu dashboard]' style='border: none' /></a></noscript><obj class='tableauViz' style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='[Nombre de tu dashboard en Tableau Public]' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='[URL de imagen de tu dashboard]' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></obj></div><script type='text/javascript'>var divElement = document.getElementById('viz1678901234567');var vizElement = divElement.getElementsByTagName('object')[0];vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';var scriptElement = document.createElement('script');scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';vizElement.parentNode.insertBefore(scriptElement, vizElement);</script>
+             -->
+             <img src="../images/Proyecto1.png" alt="Visualización Clave 1">
+             <h3>vista enfocada en los productos</h3>
+
+             <img src="../images/Proyecto12.png" alt="Visualización Clave 2">
+              
+             <!-- Añade más imágenes si es necesario -->
+
+            <h2>Insights y Conclusiones</h2>
+            <p>El gráfico de "Suma de Cantidad por Tipo de venta" muestra que las ventas online (5 mil unidades) superan masivamente a las ventas en tienda física (1 mil unidades).
+                Esto sugiere que el canal online es aproximadamente 5 veces más importante en términos de volumen de ventas que el canal físico. </p>
+            <p>Las ciudades con mayor volumen de ventas (representadas por círculos más grandes) son Tokio, seguida por Osaka y Nagoya.</p>
+            <p>La evolución de las ventas muestran un patron de ascenso de las mismas a partir de julio y que los productos de mayor volumen de ventas son los Altavoces y AUdifonos.</p>
+            <p>La estrategia de la empresa debería estar fuertemente orientada y optimizada para el canal digital.</p>
+
+            <h2>Preguntas Estratégicas que Surgen:</h2>
+            <p>¿Por qué el canal físico tiene un rendimiento tan bajo en comparación con el online? ¿Hay oportunidades para mejorarlo o se debería considerar reducir la inversión en él?</p>
+            <p>¿A qué se deben las fluctuaciones en las ventas trimestrales/semestrales? ¿Están relacionadas con campañas de marketing, problemas de stock, factores económicos o estacionalidad?</p>
+
+            <p style="text-align: center; margin-top: 30px;"><a href="../projects.html" class="button">« Volver a Proyectos</a></p>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Dario Nievas Portafolio © 2025</p>
+    </footer>
+</body>
+</html>

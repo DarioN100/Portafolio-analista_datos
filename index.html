@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dario Nievas | Portafolio Analista de Datos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos de Font Awesome para redes sociales, etc. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Contenedor para las partículas de fondo -->
+    <div id="particles-js"></div>
+
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Dario Nievas</span> Portafolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li class="current"><a href="about.html">Acerca de</a></li>
+                    <li><a href="projects.html">Proyectos</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <!-- El overlay ya no es necesario si usamos flexbox y z-index para el texto -->
+        <!-- Podemos dejar el div container para centrar el contenido principal del showcase -->
+        <div class="container showcase-content">
+             <div class="showcase-text">
+                <h1>Analista de Datos BI</h1>
+                <p>Transformando Datos en Desiciones Inteligentes</p>
+                 <!-- Opcional: botón para ir a Acerca de o Proyectos -->
+                 <!-- <a href="projects.html" class="button">Ver Mis Proyectos</a> -->
+            </div>
+            <div class="profile-image-container">
+                 <img src="images/tu_foto.jpeg" alt="Tu Foto de Perfil" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about-home" class="content-section">
+        <div class="container">
+            <h2>Acerca de Mí</h2>
+            <p>Soy un profesional con base en ingenieria agrónoma, donde cultivé habilidades analíticas y de resolución de problemas en entornos complejos. Mi pasión por descubrir patrones y generar valor a partir de la información me llevó a la transición hacia el análisis de datos. Ahora, combino mi experiencia previa con el dominio de herramientas como Power BI, SQL, Python y Tableau para transformar datos brutos en insights estratégicos.</p>
+            <p><a href="about.html" class="button">Leer más »</a></p>
+        </div>
+    </section>
+
+    <section id="skills-home">
+        <div class="container">
+            <h2>Habilidades Clave</h2>
+            <div class="skills-grid">
+                <!-- Cada 'skill-item' representa una tecnología -->
+                <div class="skill-item">
+                    <img src="images/icons/powerbi.png" alt="Icono Power BI"> 
+                    <span class="skill-name">Power BI</span>
+                </div>
+
+                 <div class="skill-item">
+                    <img src="images/icons/sql.png" alt="Icono SQL Server"> 
+                    <span class="skill-name">SQL</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/icons/python.png" alt="Icono Python"> 
+                    <span class="skill-name">Python</span>
+                </div>
+
+                 <!-- Ejemplo de librería de Python -->
+                 <div class="skill-item">
+                    <img src="images/icons/pandas.png" alt="Icono Pandas"> 
+                    <span class="skill-name">Pandas</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/icons/excel.png" alt="Icono Excel"> 
+                    <span class="skill-name">Excel</span>
+                </div>
+
+                <div class="skill-item">
+                    <img src="images/icons/tableau.png" alt="Icono Tableau"> 
+                    <span class="skill-name">Tableau</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects-gallery">
+        <div class="container">
+            <h2>Mis Proyectos Destacados</h2>
+            <div class="project-grid">
+                <!-- Ejemplo de un ítem de proyecto. Duplica y adapta para cada proyecto -->
+                <div class="project-item">
+                    <img src="images/Proyecto1.png" alt="Miniatura Proyecto 1">
+                    <h3>Analisis de empresa de venta de articulos electronicos (ElectroMas)</h3>
+                    <p>El gerente general solicita que le muestre cómo han ido evolucionando las ventas, separando en diferentes perspectivas</p>
+                    <p><strong>Tecnologías:</strong> Power Bi, Excel</p>
+                    <a href="projects/project1.html">Ver Proyecto</a>
+                </div>
+
+                <div class="project-item">
+                    <img src="images/Proyecto21.png" alt="Miniatura Proyecto 2">
+                     <h3>Analisis de sucursales de una empresa de retail</h3>
+                    <p>Analisis de la sucursal con mayores ventas, evolucioón de las mismas en el tiempo y facturacion de cada sucursal</p>
+                    <p><strong>Tecnologías:</strong> Power Bi, Excel</p>
+                    <a href="">Ver Proyecto</a>
+                </div>
+
+                 <!-- Añade más project-item según necesites -->
+
+            </div>
+             <p style="text-align: center; margin-top: 30px;"><a href="projects.html" class="button">Ver Todos los Proyectos »</a></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contáctame</h2>
+            <p>¡Estoy disponible para colaborar en proyectos o discutir oportunidades!</p>
+            <p>Email: <a href="mailto:[tu.email@ejemplo.com]">darionievass@gmail.com</a></p>
+            <div class="social-links">
+                <a href="[Enlace a tu LinkedIn]" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="[Enlace a tu GitHub]" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- Añade otros si tienes (ej: Twitter, sitio personal si tienes otro) -->
+            </div>
+             <p style="margin-top: 20px;"><a href="contact.html" class="button">Formulario de Contacto »</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Dario Nievas Portafolio © 2025</p>
+    </footer>
+
+    <!-- Scripts de particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS('particles-js',
+            {
+              "particles": {
+                "number": {
+                  "value": 80, // Cantidad de partículas
+                  "density": {
+                    "enable": true,
+                    "value_area": 800
+                  }
+                },
+                "color": {
+                  "value": "#ffffff" // Color de las partículas
+                },
+                "shape": {
+                  "type": "circle", // Forma de las partículas
+                  "stroke": {
+                    "width": 0,
+                    "color": "#000000"
+                  },
+                  "polygon": {
+                    "nb_sides": 5
+                  },
+                  "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                  }
+                },
+                "opacity": {
+                  "value": 0.5, // Opacidad
+                  "random": false,
+                  "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "size": {
+                  "value": 3, // Tamaño
+                  "random": true,
+                  "anim": {
+                    "enable": false,
+                    "speed": 40,
+                    "size_min": 0.1,
+                    "sync": false
+                  }
+                },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 150, // Distancia para que se unan con líneas
+                  "color": "#ffffff", // Color de las líneas
+                  "opacity": 0.4,
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 6, // Velocidad de movimiento
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                  }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": {
+                    "enable": true,
+                    "mode": "repulse" // Efecto al pasar el mouse (ej: repeler)
+                  },
+                  "onclick": {
+                    "enable": true,
+                    "mode": "push" // Efecto al hacer clic (ej: añadir partículas)
+                  },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                      "opacity": 1
+                    }
+                  },
+                  "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                  },
+                  "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                  },
+                  "push": {
+                    "particles_nb": 4
+                  },
+                  "remove": {
+                    "particles_nb": 2
+                  }
+                }
+              },
+              "retina_detect": true
+            }
+        );
+    </script>
+
+</body>
+</html>

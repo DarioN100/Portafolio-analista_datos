@@ -1,0 +1,522 @@
+/* Estilos básicos para el portafolio */
+body {
+    font-family: 'Arial', sans-serif; /* Puedes cambiar la fuente */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Color de texto principal */
+    position: relative; /* Necesario para posicionar el fondo de partículas */
+    min-height: 100vh; /* Asegura que el body ocupe al menos toda la altura de la ventana */
+}
+
+/* Fondo de Partículas */
+#particles-js {
+    position: fixed; /* Fijo para cubrir todo el viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333; /* Color de fondo si las partículas no cubren todo */
+    background-image: linear-gradient(45deg, #0779e4, #333); /* Degradado como fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -1; /* Asegura que esté detrás de todo el contenido */
+    opacity: 0.9; /* Un poco de transparencia para que el contenido se vea bien */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden; /* Limpia floats */
+}
+
+/* Encabezado y Navegación */
+header {
+    background: rgba(51, 51, 51, 0.9); /* Fondo semi-transparente para ver las partículas */
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid; /* Línea de acento */
+    position: relative; /* Para que esté por encima de las partículas */
+    z-index: 1;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #0779e4; /* Color de acento para destacar */
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #fff; /* Cambia al color secundario al pasar el mouse */
+    font-weight: bold;
+}
+
+/* Sección Principal (Hero) - MODIFICADA */
+#showcase {
+    min-height: 500px; /* Aumenta la altura mínima */
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1; /* Asegura que esté encima de las partículas */
+    padding: 80px 20px; /* Añade padding interno */
+    display: flex; /* Usamos flexbox */
+    align-items: center; /* Centra verticalmente el contenido flex */
+    justify-content: center; /* Centra horizontalmente el contenido flex */
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column; /* Por defecto apilamos verticalmente */
+    align-items: center; /* Centra horizontalmente los elementos apilados */
+    gap: 30px; /* Espacio entre la foto y el texto */
+    max-width: 960px; /* Limita el ancho máximo del contenido */
+    width: 100%;
+}
+
+#showcase .showcase-text {
+    text-align: center; /* Texto centrado por defecto */
+}
+
+#showcase h1 {
+    margin-top: 0;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para mejor legibilidad */
+}
+
+#showcase p {
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra para mejor legibilidad */
+}
+
+/* Estilo de la foto de perfil */
+#showcase .profile-image {
+    width: 200px; /* Tamaño de la imagen */
+    height: 200px; /* Tamaño de la imagen */
+    border-radius: 50%; /* Hace la imagen redonda */
+    object-fit: cover; /* Asegura que la imagen cubra el círculo sin distorsionarse */
+    border: 5px solid #0779e4; /* Borde de acento */
+    box-shadow: 0 0 15px rgba(7, 121, 228, 0.8); /* Sombra brillante de acento */
+    /* !!! AÑADE ESTA LÍNEA PARA LA TRANSICIÓN !!! */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para transform y box-shadow */
+}
+
+/* !!! AÑADE ESTA REGLA PARA LA ANIMACIÓN AL PASAR EL MOUSE !!! */
+#showcase .profile-image:hover {
+    transform: scale(1.05) rotate(2deg); /* Agrandar 5% y rotar 2 grados */
+    box-shadow: 0 0 20px rgba(7, 121, 228, 1); /* Sombra un poco más intensa al pasar el mouse */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+}
+
+
+/* Sección "Acerca de mí" (Inicio) */
+#about-home {
+    padding: 40px 20px; /* Más padding */
+    text-align: center;
+    background: #fff;
+    position: relative;
+    z-index: 1; /* Asegura que esté encima de las partículas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil */
+    margin-top: -50px; /* Superponer ligeramente sobre el showcase */
+    border-radius: 8px;
+}
+
+#about-home h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* ... (resto de tus estilos CSS) ... */
+
+/* Sección de Habilidades (Inicio) - MODIFICADA */
+#skills-home {
+    padding: 40px 20px; /* Más padding */
+    text-align: center;
+    /* REMOVIDO: background: #e2e2e2; */ /* Elimina el fondo sólido */
+     position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Puedes mantener la sombra si quieres */
+    border-radius: 8px;
+     margin-top: 20px;
+     color: #fff; /* Cambia el color del texto principal a blanco para contraste */
+}
+
+#skills-home h2 {
+    margin-top: 0;
+    color: #fff; /* Asegura que el título también sea blanco */
+    margin-bottom: 30px; /* Espacio después del título */
+}
+
+/* Contenedor de los items de habilidad (Grid) */
+#skills-home .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Columnas responsivas, ajusta el minmax si tus iconos son más grandes/pequeños */
+    gap: 20px; /* Espacio entre los items */
+    justify-items: center; /* Centra los items dentro de su celda */
+    align-items: center; /* Centra verticalmente los items */
+}
+
+/* Cada item de habilidad */
+#skills-home .skill-item {
+    text-align: center;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente sutil para cada icono */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Ocupa el ancho disponible en la celda del grid */
+    max-width: 150px; /* Limita el ancho máximo para que no se estiren demasiado */
+}
+
+#skills-home .skill-item:hover {
+    background: rgba(255, 255, 255, 0.2); /* Un poco más visible al pasar el mouse */
+     transform: translateY(-5px); /* Pequeño efecto de elevación */
+}
+
+/* Estilo para los íconos */
+#skills-home .skill-item img {
+    width: 50px; /* Tamaño de los íconos, ajusta si es necesario */
+    height: 50px; /* Altura igual al ancho */
+    object-fit: contain; /* Asegura que la imagen completa se vea sin cortarse */
+    margin-bottom: 10px; /* Espacio entre el ícono y el nombre */
+    /* Opcional: si tus iconos son de un solo color y quieres cambiarlos para que se vean en el fondo oscuro */
+    /* filter: invert(1) grayscale(1); */ /* Esto puede hacer que iconos de color se vean como iconos blancos */
+}
+
+/* Estilo para el nombre de la tecnología */
+#skills-home .skill-item .skill-name {
+    display: block; /* Para que ocupe su propia línea */
+    font-size: 1em; /* Tamaño de fuente */
+    color: #fff; /* Color blanco para el nombre */
+    font-weight: bold;
+}
+
+/* ... (resto de tus estilos CSS, incluyendo media queries) ... */
+
+/* Asegúrate de que en las media queries para móviles, los estilos del grid se ajusten si es necesario */
+@media(max-width: 768px){
+    /* ... (otros estilos responsivos) ... */
+
+    #skills-home {
+        padding: 30px 15px;
+        margin-top: 15px;
+    }
+
+     #skills-home .skills-grid {
+         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Ajusta el minmax para móviles si es necesario */
+         gap: 15px;
+     }
+
+      #skills-home .skill-item img {
+          width: 40px; /* Tamaño más pequeño en móviles */
+          height: 40px;
+      }
+
+       #skills-home .skill-item {
+           padding: 10px;
+       }
+}
+
+
+/* Sección de Proyectos (Galería) */
+#projects-gallery {
+    padding: 40px 20px;
+    background: #fff;
+     position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+     margin-top: 20px;
+}
+
+#projects-gallery h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas responsivas */
+    gap: 20px; /* Espacio entre proyectos */
+    margin-top: 20px;
+}
+
+.project-item {
+    background: #f4f4f4; /* Fondo para cada proyecto */
+    border: #ccc 1px solid;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el mouse */
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Mueve ligeramente hacia arriba al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+}
+
+
+.project-item img {
+    max-width: 100%;
+    height: 180px; /* Altura fija para las miniaturas */
+    object-fit: cover; /* Asegura que la imagen cubra el área */
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.project-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+.project-item a {
+    display: inline-block; /* Permite aplicar padding y margin */
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #0779e4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-item a:hover {
+    background: #055a9f; /* Color más oscuro al pasar el mouse */
+}
+
+/* Sección de Contacto */
+#contact {
+    padding: 40px 20px;
+    background: #e2e2e2;
+    text-align: center;
+     position: relative;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+     margin-top: 20px;
+}
+
+#contact h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contact .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333; /* Color de los íconos */
+    transition: color 0.3s ease;
+}
+
+#contact .social-links a:hover {
+    color: #0779e4; /* Color de acento al pasar el mouse */
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+     position: relative;
+    z-index: 1;
+}
+
+/* Estilos específicos para páginas de contenido (Acerca de, Proyectos Individuales) */
+.content-section {
+    padding: 40px 20px; /* Más padding */
+    background: #fff;
+    margin-bottom: 20px;
+    border-bottom: #ccc 1px solid;
+     position: relative; /* Asegura que esté encima de las partículas */
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-top: 20px; /* Ajusta según necesites, si no viene del index */
+}
+
+.content-section h1, .content-section h2, .content-section h3 {
+     color: #333;
+     margin-top: 0;
+}
+
+.content-section img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Evita espacio extra debajo de la imagen */
+    margin: 10px auto; /* Centra la imagen */
+    border-radius: 5px;
+}
+
+/* Estilo para bloques de código */
+pre {
+    background: #f4f4f4;
+    padding: 15px;
+    overflow-x: auto; /* Permite scroll horizontal si el código es muy largo */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+}
+
+/* Estilos para tablas (si incluyes alguna) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Botón general */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0779e4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+     background: #055a9f;
+}
+
+
+/* Estilos responsivos - MODIFICADOS */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header nav ul {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #showcase {
+         min-height: 400px; /* Ajusta altura en móviles */
+         padding: 60px 20px;
+    }
+
+     #showcase .showcase-content {
+        flex-direction: column; /* Asegura apilamiento en móviles */
+        gap: 20px; /* Menos espacio en móviles */
+     }
+
+    #showcase h1 {
+        font-size: 40px; /* Ajusta tamaño de fuente */
+    }
+
+    #showcase .profile-image {
+         width: 150px; /* Reduce tamaño de imagen en móviles */
+         height: 150px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .content-section, #about-home, #skills-home, #projects-gallery, #contact {
+        padding: 30px 15px; /* Ajusta padding en móviles */
+        margin-top: 15px;
+    }
+
+     #about-home {
+        margin-top: -30px; /* Ajusta superposición en móviles */
+     }
+}
+
+/* Media query para pantallas medianas/grandes donde ponemos foto y texto lado a lado */
+@media(min-width: 769px){
+    #showcase .showcase-content {
+        flex-direction: row; /* Lado a lado */
+        align-items: center; /* Centra verticalmente */
+        text-align: left; /* Alinea texto a la izquierda */
+    }
+
+    #showcase .showcase-text {
+        flex: 1; /* Permite que el texto ocupe espacio */
+        padding-right: 30px; /* Espacio entre texto y foto */
+        text-align: left; /* Alinea texto a la izquierda en pantallas grandes */
+    }
+
+     #showcase .profile-image-container {
+         /* No necesita mucho estilo si la imagen tiene tamaño fijo */
+         flex-shrink: 0; /* Evita que la imagen se reduzca */
+     }
+
+      #showcase h1 {
+         margin-top: 0; /* Quitar margin-top añadido antes para centrar */
+      }
+}
